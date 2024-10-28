@@ -19,3 +19,9 @@ schedule:
   periodic-rule: "0 * * * * *"
   duty: "0 * * * * *"
   todo-reminder: "0 0 8 * * *"
+  submit-meter-reminder: "0 0 * * * *"
+
+datetime:
+  day: 23
+  hour: 12
+  minute: 0
