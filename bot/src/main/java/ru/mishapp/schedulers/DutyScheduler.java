@@ -33,7 +33,7 @@ public class DutyScheduler {
             LocalDate lastMessages = duty.getLastMessages();
             int days = (int) Duration.between(lastMessages.atStartOfDay(), LocalDate.now().atStartOfDay()).toDays();
             
-            if (days > 0) {
+            if (days > 30) {
                 List<DutyUser> users = duty.getUsers();
                 Long nextUserId = users.get(random.nextInt(users.size())).getId().getId();
                 if (nextUserId != null) {
